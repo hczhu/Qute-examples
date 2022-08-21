@@ -1,0 +1,9 @@
+package(default_visibility = ["//visibility:private"])
+
+cc_binary(
+    name = "full_text_search",
+    srcs = ["full_text_search.cc"],
+    deps = [
+        "@com_github_hczhu_qute//:qute",
+    ],
+)
